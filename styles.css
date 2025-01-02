@@ -1,0 +1,90 @@
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+  }
+  
+  #container {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  #display {
+    height: 100px;
+    background-color: #222;
+    color: #fff;
+    font-size: 2rem;
+    text-align: right;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .box {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+  }
+  
+  button {
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #dcdcdc;
+  }
+  
+  .utilities, .operators, .second, .third, .fourth, .last {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .utilities button {
+    background-color: #f78c6b;
+    color: #fff;
+    flex: 1;
+  }
+  
+  .operators button {
+    background-color: #fcbf49;
+    color: #fff;
+    flex: 1;
+  }
+  
+  button#equal {
+    background-color: #6ab04c;
+    color: #fff;
+  }
+  
+  .second, .third, .fourth, .last {
+    justify-content: space-between;
+  }
+  
+  button#zero {
+    flex: 2;
+    text-align: center;
+  }
+  
+  button:not(#zero) {
+    flex: 1;
+  }
+  
+  button#decimal {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
